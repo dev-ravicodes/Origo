@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OutfitDetailsCVC" id="K6j-rL-VxL" customClass="OutfitDetailsCVC" customModule="Origo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="295"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="295"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wyt-6p-MiF">
+                        <rect key="frame" x="2" y="2" width="126" height="291"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_WomenImg" translatesAutoresizingMaskIntoConstraints="NO" id="ZSd-gK-th2">
+                                <rect key="frame" x="0.0" y="0.0" width="126" height="291"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ZSd-gK-th2" secondAttribute="bottom" id="3Gj-5D-Rt9"/>
+                            <constraint firstItem="ZSd-gK-th2" firstAttribute="top" secondItem="Wyt-6p-MiF" secondAttribute="top" id="GKe-dt-gZm"/>
+                            <constraint firstItem="ZSd-gK-th2" firstAttribute="leading" secondItem="Wyt-6p-MiF" secondAttribute="leading" id="YJK-SP-Eas"/>
+                            <constraint firstAttribute="trailing" secondItem="ZSd-gK-th2" secondAttribute="trailing" id="beE-Zt-Pgr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="DxA-aG-9Fs"/>
+            <constraints>
+                <constraint firstItem="Wyt-6p-MiF" firstAttribute="leading" secondItem="K6j-rL-VxL" secondAttribute="leading" constant="2" id="NUj-WV-KYT"/>
+                <constraint firstAttribute="bottom" secondItem="Wyt-6p-MiF" secondAttribute="bottom" constant="2" id="Qel-R3-eQn"/>
+                <constraint firstAttribute="trailing" secondItem="Wyt-6p-MiF" secondAttribute="trailing" constant="2" id="qmj-Yc-fk5"/>
+                <constraint firstItem="Wyt-6p-MiF" firstAttribute="top" secondItem="K6j-rL-VxL" secondAttribute="top" constant="2" id="qtf-0X-4uB"/>
+            </constraints>
+            <size key="customSize" width="130" height="295"/>
+            <connections>
+                <outlet property="imgView" destination="ZSd-gK-th2" id="5nl-ha-tWw"/>
+            </connections>
+            <point key="canvasLocation" x="100.76335877862596" y="32.74647887323944"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_WomenImg" width="102" height="170"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-Bold.ttf</string>
+		<string>Urbanist-ThinItalic.ttf</string>
+		<string>Urbanist-Thin.ttf</string>
+		<string>Urbanist-SemiBoldItalic.ttf</string>
+		<string>Urbanist-SemiBold.ttf</string>
+		<string>Urbanist-Regular.ttf</string>
+		<string>Urbanist-MediumItalic.ttf</string>
+		<string>Urbanist-Medium.ttf</string>
+		<string>Urbanist-LightItalic.ttf</string>
+		<string>Urbanist-Light.ttf</string>
+		<string>Urbanist-Italic.ttf</string>
+		<string>Urbanist-ExtraLightItalic.ttf</string>
+		<string>Urbanist-ExtraLight.ttf</string>
+		<string>Urbanist-ExtraBoldItalic.ttf</string>
+		<string>Urbanist-ExtraBold.ttf</string>
+		<string>Urbanist-BoldItalic.ttf</string>
+		<string>Urbanist-Bold.ttf</string>
+		<string>Urbanist-BlackItalic.ttf</string>
+		<string>Urbanist-Black.ttf</string>
+		<string>MarcellusSC-Regular.ttf</string>
+		<string>Lato-Black.ttf</string>
+		<string>Lato-ThinItalic.ttf</string>
+		<string>Lato-Thin.ttf</string>
+		<string>Lato-Regular.ttf</string>
+		<string>Lato-LightItalic.ttf</string>
+		<string>Lato-Italic.ttf</string>
+		<string>Lato-Light.ttf</string>
+		<string>Lato-BoldItalic.ttf</string>
+		<string>Lato-Bold.ttf</string>
+		<string>Lato-BlackItalic.ttf</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyRackCVC" id="gTV-IL-0wX" customClass="MyRackCVC" customModule="Origo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="224"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="224"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Yk-0Y-9OB">
+                        <rect key="frame" x="8" y="8" width="122" height="208"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_WomenImg" translatesAutoresizingMaskIntoConstraints="NO" id="Ped-Uu-lWq">
+                                <rect key="frame" x="4" y="4" width="114" height="200"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xH9-Hc-boy">
+                                <rect key="frame" x="100" y="4" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="GwF-Tg-X9q"/>
+                                    <constraint firstAttribute="width" constant="18" id="c4z-VP-3y7"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="ic_removeUploadOutfitImg"/>
+                                <connections>
+                                    <action selector="removeAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Vxk-ki-8ZY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xH9-Hc-boy" firstAttribute="top" secondItem="Ped-Uu-lWq" secondAttribute="top" id="2aS-zE-xnS"/>
+                            <constraint firstAttribute="bottom" secondItem="Ped-Uu-lWq" secondAttribute="bottom" constant="4" id="3Dv-rB-Ais"/>
+                            <constraint firstItem="Ped-Uu-lWq" firstAttribute="leading" secondItem="6Yk-0Y-9OB" secondAttribute="leading" constant="4" id="HHE-7k-kfn"/>
+                            <constraint firstItem="xH9-Hc-boy" firstAttribute="trailing" secondItem="Ped-Uu-lWq" secondAttribute="trailing" id="Mfn-po-G81"/>
+                            <constraint firstItem="Ped-Uu-lWq" firstAttribute="top" secondItem="6Yk-0Y-9OB" secondAttribute="top" constant="4" id="vV3-0N-9Pe"/>
+                            <constraint firstAttribute="trailing" secondItem="Ped-Uu-lWq" secondAttribute="trailing" constant="4" id="wsE-ux-hst"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="6Yk-0Y-9OB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="1FW-bY-1Dc"/>
+                <constraint firstItem="6Yk-0Y-9OB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="DEo-7i-je6"/>
+                <constraint firstAttribute="trailing" secondItem="6Yk-0Y-9OB" secondAttribute="trailing" constant="8" id="Pcx-4H-w0V"/>
+                <constraint firstAttribute="bottom" secondItem="6Yk-0Y-9OB" secondAttribute="bottom" constant="8" id="Qgs-jP-TgP"/>
+            </constraints>
+            <size key="customSize" width="138" height="224"/>
+            <connections>
+                <outlet property="imgView" destination="Ped-Uu-lWq" id="B0a-eb-rwO"/>
+                <outlet property="mainView" destination="6Yk-0Y-9OB" id="teM-uN-HT9"/>
+                <outlet property="removeBtn" destination="xH9-Hc-boy" id="Pyb-0g-deP"/>
+            </connections>
+            <point key="canvasLocation" x="106.87022900763358" y="31.690140845070424"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_WomenImg" width="102" height="170"/>
+        <image name="ic_removeUploadOutfitImg" width="36" height="36"/>
+    </resources>
+</document>

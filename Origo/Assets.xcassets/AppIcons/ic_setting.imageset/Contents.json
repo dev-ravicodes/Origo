@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "is_setting.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

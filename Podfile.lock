@@ -1,0 +1,82 @@
+PODS:
+  - AdvancedPageControl (0.9.0)
+  - Alamofire (5.8.1)
+  - CropViewController (2.6.1)
+  - DZNEmptyDataSet (1.8.1)
+  - iOSDropDown (0.4.0)
+  - IQKeyboardManagerSwift (6.5.16)
+  - KDCircularProgress (1.5.4)
+  - Kingfisher (7.10.1)
+  - Koloda (5.0.1):
+    - pop (~> 1.0)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - PhotoRoomKit (0.0.3)
+  - pop (1.0.12)
+  - RangeSeekSlider (1.8.0)
+  - SnapKit (5.6.0)
+  - SwiftyGif (5.4.4)
+  - SwiftyJSON (5.0.1)
+  - TTRangeSlider (1.0.7)
+
+DEPENDENCIES:
+  - AdvancedPageControl
+  - Alamofire
+  - CropViewController
+  - DZNEmptyDataSet
+  - iOSDropDown
+  - IQKeyboardManagerSwift
+  - KDCircularProgress
+  - Kingfisher
+  - Koloda
+  - NVActivityIndicatorView
+  - PhotoRoomKit
+  - RangeSeekSlider
+  - SnapKit
+  - SwiftyGif
+  - SwiftyJSON
+  - TTRangeSlider
+
+SPEC REPOS:
+  trunk:
+    - AdvancedPageControl
+    - Alamofire
+    - CropViewController
+    - DZNEmptyDataSet
+    - iOSDropDown
+    - IQKeyboardManagerSwift
+    - KDCircularProgress
+    - Kingfisher
+    - Koloda
+    - NVActivityIndicatorView
+    - PhotoRoomKit
+    - pop
+    - RangeSeekSlider
+    - SnapKit
+    - SwiftyGif
+    - SwiftyJSON
+    - TTRangeSlider
+
+SPEC CHECKSUMS:
+  AdvancedPageControl: 39e3b32b00b2d324c534f8e17cc6c5be9abe84b7
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  CropViewController: 58fb440f30dac788b129d2a1f24cffdcb102669c
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  iOSDropDown: ce9daa584eaa5567cafc1b633e3cc7eb6d9cea42
+  IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
+  KDCircularProgress: 98200c6b8e85d22bc04eb644721d3b1e12b0686b
+  Kingfisher: bc5abe80a8e0144537ef1dd5a0b2621b04f7f439
+  Koloda: d07b9199a383abc5898b62aa945a599f5e7c0c4b
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  PhotoRoomKit: 93afaf03ad6a531ed90ee805b2bbc91360ff2d7b
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyGif: 93a1cc87bf3a51916001cf8f3d63835fb64c819f
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  TTRangeSlider: 8cf72eca457c3b700c92eb0074be908c986e25ec
+
+PODFILE CHECKSUM: 73700fafa620a6e605d47696cd255efa5031d04d
+
+COCOAPODS: 1.15.2

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="r80-16-AeH" customClass="OutfitsOverlayView" customModule="Origo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="deH-Kd-hEE">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="30"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XYl-ai-fFQ"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="deH-Kd-hEE" firstAttribute="top" secondItem="r80-16-AeH" secondAttribute="top" id="AzX-Nx-mXV"/>
+                <constraint firstAttribute="bottom" secondItem="deH-Kd-hEE" secondAttribute="bottom" id="om9-qm-ggX"/>
+                <constraint firstItem="deH-Kd-hEE" firstAttribute="leading" secondItem="r80-16-AeH" secondAttribute="leading" id="wJ0-uY-Igb"/>
+                <constraint firstAttribute="trailing" secondItem="deH-Kd-hEE" secondAttribute="trailing" id="yQM-nc-Kwq"/>
+            </constraints>
+            <connections>
+                <outlet property="overlayImageView" destination="deH-Kd-hEE" id="WrM-lw-fZV"/>
+            </connections>
+            <point key="canvasLocation" x="-49" y="-48"/>
+        </view>
+    </objects>
+</document>

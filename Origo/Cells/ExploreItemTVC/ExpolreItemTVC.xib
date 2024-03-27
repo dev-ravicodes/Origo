@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Urbanist-Regular.ttf">
+            <string>Urbanist-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ExpolreItemTVC" rowHeight="83" id="KGk-i7-Jjw" customClass="ExpolreItemTVC" customModule="Origo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mzP-Q1-J8Q">
+                        <rect key="frame" x="4" y="4" width="312" height="71"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 1: Type, Color, Material, Brand, Model" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjR-ye-qu3">
+                                <rect key="frame" x="8" y="8" width="300" height="56"/>
+                                <fontDescription key="fontDescription" name="Urbanist-Regular" family="Urbanist" pointSize="16"/>
+                                <color key="textColor" name="ButtonBGColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hjR-ye-qu3" firstAttribute="leading" secondItem="mzP-Q1-J8Q" secondAttribute="leading" constant="8" id="TFL-72-8B1"/>
+                            <constraint firstItem="hjR-ye-qu3" firstAttribute="top" secondItem="mzP-Q1-J8Q" secondAttribute="top" constant="8" id="pO0-fZ-gdX"/>
+                            <constraint firstAttribute="bottom" secondItem="hjR-ye-qu3" secondAttribute="bottom" constant="7" id="ps1-LZ-N6u"/>
+                            <constraint firstAttribute="trailing" secondItem="hjR-ye-qu3" secondAttribute="trailing" constant="4" id="uNx-0q-HNN"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVB-bN-gIn">
+                        <rect key="frame" x="2" y="72" width="316" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.90000000000000002" id="PZi-Jq-wpA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OVB-bN-gIn" secondAttribute="trailing" constant="2" id="2cQ-Td-doM"/>
+                    <constraint firstItem="mzP-Q1-J8Q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="7fx-Iw-Zqq"/>
+                    <constraint firstItem="OVB-bN-gIn" firstAttribute="top" secondItem="hjR-ye-qu3" secondAttribute="bottom" constant="4" id="Qy7-CC-pQe"/>
+                    <constraint firstItem="mzP-Q1-J8Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="4" id="U2k-AJ-7uf"/>
+                    <constraint firstAttribute="bottom" secondItem="mzP-Q1-J8Q" secondAttribute="bottom" constant="8" id="cEo-EM-mmb"/>
+                    <constraint firstItem="OVB-bN-gIn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="eL2-Cm-W9S"/>
+                    <constraint firstAttribute="trailing" secondItem="mzP-Q1-J8Q" secondAttribute="trailing" constant="4" id="t0x-s9-aiO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemLbl" destination="hjR-ye-qu3" id="2ZS-zv-Lv3"/>
+            </connections>
+            <point key="canvasLocation" x="106.87022900763358" y="-18.661971830985916"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ButtonBGColor">
+            <color red="0.20000000000000001" green="0.24705882352941178" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

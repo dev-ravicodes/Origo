@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Urbanist-Regular.ttf">
+            <string>Urbanist-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SharePeopleTVC" rowHeight="54" id="KGk-i7-Jjw" customClass="SharePeopleTVC" customModule="Origo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MFf-7x-5Xi">
+                        <rect key="frame" x="2" y="2" width="316" height="50"/>
+                        <subviews>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_shareVector" translatesAutoresizingMaskIntoConstraints="NO" id="d5y-gG-9LV">
+                                <rect key="frame" x="16" y="15" width="20" height="20"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_shareWomen" translatesAutoresizingMaskIntoConstraints="NO" id="G37-N6-AbL">
+                                <rect key="frame" x="52" y="7" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="02o-BU-SXt"/>
+                                    <constraint firstAttribute="width" constant="36" id="RVp-Al-UNZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leslie Alexander" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZN-Cr-dHt">
+                                <rect key="frame" x="104" y="15.333333333333334" width="113.66666666666669" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Urbanist-Regular" family="Urbanist" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G37-N6-AbL" firstAttribute="centerY" secondItem="d5y-gG-9LV" secondAttribute="centerY" id="dJz-g8-5MH"/>
+                            <constraint firstItem="G37-N6-AbL" firstAttribute="top" secondItem="MFf-7x-5Xi" secondAttribute="top" constant="7" id="eDc-xp-TeH"/>
+                            <constraint firstItem="d5y-gG-9LV" firstAttribute="leading" secondItem="MFf-7x-5Xi" secondAttribute="leading" constant="16" id="esI-uU-UJM"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xZN-Cr-dHt" secondAttribute="trailing" constant="2" id="ilQ-lV-jNf"/>
+                            <constraint firstItem="xZN-Cr-dHt" firstAttribute="centerY" secondItem="G37-N6-AbL" secondAttribute="centerY" id="nZf-4x-I4i"/>
+                            <constraint firstAttribute="bottom" secondItem="G37-N6-AbL" secondAttribute="bottom" constant="7" id="qjS-Er-1TI"/>
+                            <constraint firstItem="G37-N6-AbL" firstAttribute="leading" secondItem="d5y-gG-9LV" secondAttribute="trailing" constant="16" id="sej-dG-SsE"/>
+                            <constraint firstItem="xZN-Cr-dHt" firstAttribute="leading" secondItem="G37-N6-AbL" secondAttribute="trailing" constant="16" id="uqc-Vl-max"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MFf-7x-5Xi" secondAttribute="trailing" constant="2" id="JCr-ze-hiu"/>
+                    <constraint firstItem="MFf-7x-5Xi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="b6U-JJ-8tq"/>
+                    <constraint firstItem="MFf-7x-5Xi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="dr7-3e-yYy"/>
+                    <constraint firstAttribute="bottom" secondItem="MFf-7x-5Xi" secondAttribute="bottom" constant="2" id="yWb-QG-Zcs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="shareImg" destination="d5y-gG-9LV" id="YLf-9t-is8"/>
+            </connections>
+            <point key="canvasLocation" x="129.7709923664122" y="-28.87323943661972"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_shareVector" width="20" height="20"/>
+        <image name="ic_shareWomen" width="40" height="37"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

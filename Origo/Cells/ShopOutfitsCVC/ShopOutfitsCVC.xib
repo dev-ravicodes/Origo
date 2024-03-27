@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarcellusSC-Regular.ttf">
+            <string>MarcellusSC-Regular</string>
+        </array>
+        <array key="Urbanist-Bold.ttf">
+            <string>Urbanist-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShopOutfitsCVC" id="gTV-IL-0wX" customClass="ShopOutfitsCVC" customModule="Origo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="280" height="364"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="280" height="364"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1q2-dJ-V3F">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="364"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Jo-xj-M27">
+                                <rect key="frame" x="7" y="7" width="266" height="202.66666666666666"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLc-VP-ewb">
+                                <rect key="frame" x="10" y="219.66666666666666" width="260" height="17"/>
+                                <fontDescription key="fontDescription" name="Urbanist-Bold" family="Urbanist" pointSize="14"/>
+                                <color key="textColor" name="ButtonBGColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estrid Cold  Shoulder  Sweater" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-Op-cNX" userLabel="Estrid Cold  Shoulder  Sweater">
+                                <rect key="frame" x="0.0" y="248.66666666666666" width="280" height="52.666666666666657"/>
+                                <fontDescription key="fontDescription" name="MarcellusSC-Regular" family="Marcellus SC" pointSize="14"/>
+                                <color key="textColor" name="ButtonBGColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Majorelle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WXw-Qp-KmU">
+                                <rect key="frame" x="10" y="308.66666666666669" width="260" height="15.333333333333314"/>
+                                <fontDescription key="fontDescription" name="MarcellusSC-Regular" family="Marcellus SC" pointSize="12"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.24705882352941178" blue="0.31372549019607843" alpha="0.69867549668874174" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="LIghtGrayBackground"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5Jo-xj-M27" secondAttribute="trailing" constant="7" id="4tA-Lo-TyI"/>
+                            <constraint firstItem="5Jo-xj-M27" firstAttribute="leading" secondItem="1q2-dJ-V3F" secondAttribute="leading" constant="7" id="7ug-ZY-w2D"/>
+                            <constraint firstAttribute="trailing" secondItem="NLc-VP-ewb" secondAttribute="trailing" constant="10" id="CKW-NR-wiY"/>
+                            <constraint firstItem="5Jo-xj-M27" firstAttribute="top" secondItem="1q2-dJ-V3F" secondAttribute="top" constant="7" id="CgT-iT-OVo"/>
+                            <constraint firstItem="FfB-Op-cNX" firstAttribute="leading" secondItem="1q2-dJ-V3F" secondAttribute="leading" id="GGZ-aN-9u4"/>
+                            <constraint firstAttribute="trailing" secondItem="FfB-Op-cNX" secondAttribute="trailing" id="LdN-SO-NKU"/>
+                            <constraint firstItem="WXw-Qp-KmU" firstAttribute="trailing" secondItem="NLc-VP-ewb" secondAttribute="trailing" id="PrD-lM-0Qp"/>
+                            <constraint firstItem="NLc-VP-ewb" firstAttribute="leading" secondItem="1q2-dJ-V3F" secondAttribute="leading" constant="10" id="gUj-Ov-ofh"/>
+                            <constraint firstItem="FfB-Op-cNX" firstAttribute="top" secondItem="NLc-VP-ewb" secondAttribute="bottom" constant="12" id="nF7-Q0-xe8"/>
+                            <constraint firstItem="NLc-VP-ewb" firstAttribute="top" secondItem="5Jo-xj-M27" secondAttribute="bottom" constant="10" id="niU-pO-yNJ"/>
+                            <constraint firstItem="WXw-Qp-KmU" firstAttribute="leading" secondItem="NLc-VP-ewb" secondAttribute="leading" id="peJ-Fg-gl9"/>
+                            <constraint firstAttribute="bottom" secondItem="WXw-Qp-KmU" secondAttribute="bottom" constant="40" id="x6Y-At-6Fe"/>
+                            <constraint firstItem="WXw-Qp-KmU" firstAttribute="top" secondItem="FfB-Op-cNX" secondAttribute="bottom" constant="7.3333333333333428" id="xBk-OU-7p0"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="1q2-dJ-V3F" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="RuO-cH-yNB"/>
+                <constraint firstItem="1q2-dJ-V3F" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fqv-CG-O63"/>
+                <constraint firstAttribute="bottom" secondItem="1q2-dJ-V3F" secondAttribute="bottom" id="pow-gi-0Dw"/>
+                <constraint firstAttribute="trailing" secondItem="1q2-dJ-V3F" secondAttribute="trailing" id="w0e-gc-ZSW"/>
+            </constraints>
+            <size key="customSize" width="280" height="364"/>
+            <connections>
+                <outlet property="itemLbl" destination="NLc-VP-ewb" id="4wH-hB-8CZ"/>
+                <outlet property="mainView" destination="1q2-dJ-V3F" id="hmL-ge-79W"/>
+                <outlet property="matiralNameLbl" destination="WXw-Qp-KmU" id="3rK-y5-v8W"/>
+                <outlet property="outfitImg" destination="5Jo-xj-M27" id="KRd-6Y-T2P"/>
+                <outlet property="outfitsLBl" destination="FfB-Op-cNX" id="Tvn-Jz-Bp2"/>
+            </connections>
+            <point key="canvasLocation" x="245.80152671755724" y="23.239436619718312"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="ButtonBGColor">
+            <color red="0.20000000000000001" green="0.24705882352941178" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LIghtGrayBackground">
+            <color red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

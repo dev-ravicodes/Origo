@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Urbanist-Medium.ttf">
+            <string>Urbanist-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommanPopupCell" rowHeight="68" id="pdv-7Q-g1w" customClass="CommanPopupCell" customModule="Origo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pdv-7Q-g1w" id="LMs-O8-a1g">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CE1-Rx-kHl">
+                        <rect key="frame" x="15" y="21.666666666666671" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="CE1-Rx-kHl" secondAttribute="height" id="WqN-Kt-qoV"/>
+                            <constraint firstAttribute="height" constant="25" id="qzj-fg-fQL"/>
+                        </constraints>
+                        <color key="tintColor" name="appYellow"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="selected" image="checkmark" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E73-VP-bZN">
+                        <rect key="frame" x="45" y="0.0" width="283" height="68"/>
+                        <fontDescription key="fontDescription" name="Urbanist-Medium" family="Urbanist" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CE1-Rx-kHl" firstAttribute="centerY" secondItem="LMs-O8-a1g" secondAttribute="centerY" id="1cS-qD-ezd"/>
+                    <constraint firstItem="E73-VP-bZN" firstAttribute="leading" secondItem="CE1-Rx-kHl" secondAttribute="trailing" constant="5" id="NEY-GS-mp2"/>
+                    <constraint firstAttribute="bottom" secondItem="E73-VP-bZN" secondAttribute="bottom" id="RGb-W1-3KM"/>
+                    <constraint firstAttribute="trailing" secondItem="E73-VP-bZN" secondAttribute="trailing" constant="10" id="hFS-fv-sdz"/>
+                    <constraint firstItem="CE1-Rx-kHl" firstAttribute="leading" secondItem="LMs-O8-a1g" secondAttribute="leading" constant="15" id="kaY-Pt-y3Y"/>
+                    <constraint firstItem="E73-VP-bZN" firstAttribute="top" secondItem="LMs-O8-a1g" secondAttribute="top" id="x1p-df-lZj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="O8u-T3-OrR"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="checkBtn" destination="CE1-Rx-kHl" id="X7t-cA-K8S"/>
+                <outlet property="labelTitle" destination="E73-VP-bZN" id="eex-0u-sXM"/>
+            </connections>
+            <point key="canvasLocation" x="166" y="-101"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkmark" catalog="system" width="128" height="114"/>
+        <namedColor name="appYellow">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
